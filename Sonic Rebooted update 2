@@ -1,0 +1,11 @@
+local Players = game:GetService("Players")
+
+local userId = 123456789 -- đổi thành UserId của thanhtruc6258
+
+local humanoid = script.Parent:WaitForChild("Humanoid")
+
+local desc = Players:GetHumanoidDescriptionFromUserId(userId)
+
+humanoid:ApplyDescription(desc)
+
+humanoid.WalkSpeed = 45
